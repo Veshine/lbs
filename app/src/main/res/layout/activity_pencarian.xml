@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+    <TextView
+        android:id="@+id/judulkategori"
+        style="@style/Tulisanjudul"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:text="PENCARIAN"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/utamalogoapk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableTop="@drawable/logokecil"
+        android:layout_height="wrap_content" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:orientation="horizontal">
+
+    <EditText android:id="@+id/edit1"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama gereja" />
+
+    <Button
+        android:id="@+id/btn_carigrj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cari"
+        android:onClick="searchgrj" />
+
+</LinearLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignParentBottom="true" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/judulkategori"
+        style="@style/Tulisanjudul"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:text="KATEGORI GEREJA"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/utamalogoapk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:drawableTop="@drawable/logokecil"
+        android:layout_height="116dp" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_halamanutama"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#EEEEEE"
+    tools:context="com.example.acer.lbsgereja.Halamanutama">
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slider"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <!--Mulai Koding Menu Barisan Pertama-->
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            android:layout_below="@+id/slider"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/judulutama"
+                style="@style/Tulisanjudul"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:text="GEREJA KOTA PONTIANAK"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:drawableTop="@drawable/logokecil"
+                android:src="@drawable/logokecil"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TableRow
+                android:id="@+id/tableRowBtn"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                >
+                <TextView
+                    android:id="@+id/txa"
+                    android:text=""
+                    android:padding="1dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_daftargrj"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_daftargereja"
+                    android:text="Gereja"
+                    />
+
+                <TextView
+                    android:id="@+id/txb"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_petagrj"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_peta"
+                    android:text="Peta Gereja"
+                    />
+
+                <TextView
+                    android:id="@+id/txc"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+            </TableRow>
+
+            <!--Mulai Koding Menu Kedua-->
+            <TableRow
+                android:id="@+id/tableRowBtn1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/txa1"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_carigrj"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_pencarian"
+                    android:text="Pencarian"
+                    />
+                <TextView
+                    android:id="@+id/txb1"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_grjsekitar"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_gerejaterdekat"
+                    android:text="Gereja Terdekat"
+                    />
+                <TextView
+                    android:id="@+id/txc1"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+            </TableRow>
+
+            <!--Mulai Koding Menu Ketiga-->
+            <TableRow
+                android:id="@+id/tableRowBtn2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/txa2"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_bantuangrj"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_bantuan"
+                    android:text="Bantuan"
+                    android:gravity="center|center_horizontal" />
+
+                <TextView
+                    android:id="@+id/txb2"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/btn_tentanggrj"
+                    style="@style/TampilanButton"
+                    android:visibility="visible"
+                    android:drawableTop="@drawable/icon_tentang"
+                    android:text="Tentang"
+                    android:gravity="center|center_horizontal" />
+
+                <TextView
+                    android:id="@+id/txc2"
+                    android:text=""
+                    android:padding="2dp">
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

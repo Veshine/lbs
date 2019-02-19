@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">LBSGereja</string>
+
+    <string name="openDrawer">Drawer dibuka</string>
+    <string name="closeDrawer">Drawer ditutup</string>
+    <string name="navigation_view_item_1">Beranda</string>
+    <string name="navigation_view_item_2">Daftar Gereja</string>
+    <string name="navigation_view_item_11">Pencarian</string>
+
+    <string name="navigasi_kategori_2">Tampilkan lokasi berdasarkan:</string>
+    <string name="navigation_view_item_3">Pontianak Kota</string>
+    <string name="navigation_view_item_4">Pontianak Selatan</string>
+    <string name="navigation_view_item_5">Pontianak Utara</string>
+    <string name="navigation_view_item_6">Pontianak Barat</string>
+    <string name="navigation_view_item_7">Pontianak Timur</string>
+    <string name="navigation_view_item_8">Pontianak Tenggara</string>
+    <string name="navigation_view_item_9">Gereja Katolik</string>
+    <string name="navigation_view_item_10">Gereja Kristen</string>
+    <string name="navigation_view_item_12">Semua Lokasi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Untuk TAP INFO -->
+    <string name="Halamaninfo.tab1">
+    Halaman Panduan Penggunaan Aplikasi. Geser ke kanan untuk info selanjutnya.
+    </string>
+
+    <!--Untuk TAP INFO -->
+    <string name="Halamaninfo.tab2">
+    Pastikan Data Seluler atau Koneksi Jaringan Internet Perangkat Android Anda Aktif untuk mengakses data di aplikasi.
+    </string>
+
+    <!--Untuk TAP INFO -->
+    <string name="Halamaninfo.tab3">
+    1.\tMENU GEREJA:\n\t\tUntuk melihat daftar gereja berdasarkan\n
+        \t\tkategori(Kecamatan/Jenis Gereja).\n\n
+    2.\tMENU PETA GEREJA:\n\t\tUntuk menampilkan Peta dan semua persebaran \n\t\t
+        titik lokasi gedung gereja di Kota Pontianak.\n\n
+    3.\tMENU PENCARIAN:\n\t\tUntuk mencari daftar nama gereja sesuai dengan\n
+        \t\tnama gedung gereja.\n\n
+    4.\tMENU GEREJA TERDEKAT:\n\t\tUntuk melihat peta persebaran lokasi gedung\n\t\t
+        gereja terdekat yang berada di sekitar pengguna.\n\n
+    5.\tMENU BANTUAN:\n\t\tUntuk melihat panduan penggunaan aplikasi.\n\n
+    6.\tMENU TENTANG:\n\t\tUntuk melihat rincian pengembangan aplikasi.
+    </string>
+
+
+</resources>
+

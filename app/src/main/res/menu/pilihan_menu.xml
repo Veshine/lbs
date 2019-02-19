@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--Mulai membuat pilihan menu yg akan tampil di pojok kanan atas halaman-->
+    <!--showAsAction (item)  -->
+    <!--“never”: tidak akan ditampilkan di Action Bar. -->
+    <!--“ifRoom”:ditampilkan selama masi ada space kosong-->
+    <!--“always”:selalu menampilkan-->
+        <item
+            android:id="@+id/itemdaftarkec"
+            android:title="Daftar Kecamatan"
+            android:showAsAction="never">
+        </item>
+        <item
+            android:id="@+id/itemdaftarjenis"
+            android:title="Daftar Jenis Gereja"
+            android:showAsAction="never">
+        </item>
+        <item
+            android:id="@+id/itembantuan"
+            android:title="Bantuan"
+            android:showAsAction="never">
+        </item>
+        <item
+            android:id="@+id/itemtentang"
+            android:title="Tentang"
+            android:showAsAction="never">
+        </item>
+        <item
+            android:id="@+id/itemkeluar"
+            android:title="Keluar"
+            android:showAsAction="never">
+        </item>
+
+    </menu>

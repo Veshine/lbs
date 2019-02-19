@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acer.lbsgereja">
+
+    <permission android:name="com.example.acer.lbsgereja.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.example.acer.lbsgereja.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>  //OpenGL ES version 2
+    <application
+        android:name=".Appcontroller"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Gereja"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="stateHidden">
+
+        <!---->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCjLQf4a5O103JGQcmdTxmxHjL_3zjq5So"/>
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Halaman Yang Muncul Pertama Kali Saat Aplikasi di jalankan-->
+        <activity
+            android:name=".Splashscreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--Daftarkan semua Halaman yang akan dijalankan pada Android-->
+        <!--Halaman pilihanmenu-->
+        <activity android:name=".Halamanpilihanmenu" android:label="Gereja"></activity>
+        <!--Halaman Utama-->
+        <activity android:name=".Halamanutama"></activity>
+        <!--Halaman Kategori-->
+        <activity android:name=".Halamankategori"></activity>
+        <!--Halaman Kecamatan-->
+        <activity android:name=".Halamankecamatan"></activity>
+        <!--Halaman Jenis Gereja-->
+        <activity android:name=".Halamanjenis"></activity>
+        <!--Halaman Gereja-->
+        <activity android:name=".Halamangerejakecamatan"></activity>
+        <!--Halaman Gereja Daftar Jenis-->
+        <activity android:name=".Halamangerejajenis"></activity>
+        <!--Halaman nformasi Gereja-->
+        <activity android:name=".Halamaninformasigereja"></activity>
+        <!--Halaman Jadwal Gereja-->
+        <activity android:name=".Halamanjadwal"></activity>
+        <!--Halaman Berita Gereja-->
+        <activity android:name=".Halamanberita"></activity>
+        <!--Halaman Detail Berita Gereja-->
+        <activity android:name=".Halamandetailberita"></activity>
+        <!--Halaman Peta Gereja-->
+        <activity android:name=".Halamanpeta"></activity>
+        <!--Halaman Pencarian-->
+        <activity android:name=".Halamanpencarian"></activity>
+        <!--Halaman Pencarian-->
+        <activity android:name=".Halamangerejasekitar"></activity>
+        <!--Halaman Bantuan-->
+        <activity android:name=".Halamanbantuan"></activity>
+        <!--Halaman Tentang Aplikasi-->
+        <activity android:name=".Halamantentang"></activity>
+        <!--Halaman Tentang Aplikasi-->
+        <activity android:name=".Halamanrute"></activity>
+        <!--filter kec-ptkkota-->
+        <activity android:name=".filter.Ptkkota"></activity>
+        <!--filter kec-ptkselatan-->
+        <activity android:name=".filter.Ptkselatan"></activity>
+        <!--filter kec-ptkutara-->
+        <activity android:name=".filter.Ptkutara"></activity>
+        <!--filter kec-ptkbarat-->
+        <activity android:name=".filter.Ptkbarat"></activity>
+        <!--filter kec-ptktimur-->
+        <activity android:name=".filter.Ptktimur"></activity>
+        <!--filter kec-ptktenggara-->
+        <activity android:name=".filter.Ptktenggara"></activity>
+        <!--filter jns-katolik-->
+        <activity android:name=".filter.Katolik"></activity>
+        <!--filter jns-kristen-->
+        <activity android:name=".filter.Kristen"></activity>
+    </application>
+
+</manifest>
